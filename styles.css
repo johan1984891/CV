@@ -1,0 +1,154 @@
+/* ==== Reset básico ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== Estilo general ==== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* ==== Contenedor principal ==== */
+.cv-container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== Barra lateral ==== */
+.contact {
+  background-color: #0a3d62;
+  color: #fff;
+  width: 30%;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.contact img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li,
+.contact a {
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* ==== Contenido principal ==== */
+main {
+  width: 70%;
+  padding: 40px 50px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+main h3 {
+  color: #0a3d62;
+  border-bottom: 2px solid #0a3d62;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  font-size: 1.2rem;
+}
+
+main p {
+  margin-bottom: 15px;
+}
+
+/* ==== Secciones ==== */
+.education h4,
+.work-experience h4 {
+  color: #333;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.education p,
+.work-experience p {
+  margin-left: 10px;
+  color: #555;
+}
+
+/* ==== Habilidades ==== */
+.Skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.Skills li {
+  background-color: #0a3d62;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.Skills li:hover {
+  background-color: #1e5f9e;
+}
+
+/* ==== Responsividad ==== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .contact {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+}
